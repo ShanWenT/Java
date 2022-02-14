@@ -1,0 +1,25 @@
+package ncs.IOPractice;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class FirstIO {
+
+	public static void main(String[] args) throws IOException {
+		String input = "D://NCS//input.txt";
+		String output = "D://NCS//output.txt";
+		
+		FileInputStream fis = new FileInputStream(input);
+		FileOutputStream fos = new FileOutputStream(output);
+		int temp;
+		while((temp=fis.read())!=-1) 
+		{
+			fos.write(temp);
+			
+		}
+
+	}
+
+}

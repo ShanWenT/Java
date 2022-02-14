@@ -1,0 +1,38 @@
+package ncs.IOPractice;
+
+//import java.io.FileInputStream;
+//import java.io.FileNotFoundException;
+//import java.io.FileOutputStream;
+//import java.io.IOException;
+import java.io.*;
+public class FirstIO {
+
+	public static void main(String[] args) throws IOException {
+		
+		File myFile = new File("D://NCS");
+		String input = "D://NCS//input.txt";
+		String output = "D://NCS//output.txt";
+		
+//		FileInputStream fis = new FileInputStream(input);
+//		FileOutputStream fos = new FileOutputStream(output);
+		FileReader fr = new FileReader(input);
+		FileWriter fw = new FileWriter(output);
+		
+		//to enhanced the speed of execution
+		BufferedReader br = new BufferedReader(fr);
+		BufferedWriter bw = new BufferedWriter(fw); 
+		
+		int temp;
+		while((temp=br.read())!=-1) 
+		{
+			bw.write(temp);
+			
+		}
+		bw.flush();
+		//fw.flush();
+		
+		myFile.createNewFile();
+
+	}
+
+}

@@ -1,0 +1,56 @@
+//package ncs.IOPractice;
+//
+//import java.io.*;
+//
+//class Fun
+//{
+//	void fun()
+//	{
+//		System.out.println("its fun method");
+//	}
+//}
+//
+//
+////class FootBaller extends Fun implements Externalizable
+//class FootBaller implements Externalizable
+//{
+//	//public static long serialVersionUID = 1234567810L;
+//	
+//	String name;
+//	int age;
+//	int noOfGoals;
+//	
+//	FootBaller(String name, int age, int noOfGoals)
+//	{
+//		this.name = name;
+//		this.age=age;
+//		this.noOfGoals = noOfGoals;
+//	}
+//	
+//	void fun()
+//	{
+//	 System.out.println("this is overwridden fun method");
+//	}
+//	
+//	public String toString()
+//	{
+//		return name+" "+age+" "+noOfGoals;
+//	}
+//
+//
+//	@Override
+//	public void writeExternal(ObjectOutputStream oos) throws IOException {
+//		oos.writeInt(age);
+//		oos.writeInt(noOfGoals);
+//		
+//	}
+//
+//	@Override
+//	public void readExternal(ObjectInputStream ois) throws IOException, ClassNotFoundException {
+//		age=ois.readInt();
+//		noOfGoals =ois.readInt();
+//		
+//	}
+//
+//	
+//}

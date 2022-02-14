@@ -1,0 +1,65 @@
+package com.ncs.Multithreads;
+
+class Queue{
+	int x;
+	void put(int x)
+	{
+		
+		System.out.println("I have put "+x+"into X");
+	}
+	void get()
+	{
+		System.out.println("I have got"+ x + "from X" );
+	}
+}
+
+class Producer extends Thread
+{
+	Queue a;
+	int z=0;
+	
+	Producer(Queue q)
+	{
+		a=q;
+	}
+	
+	public void run()
+	{
+		while(true) {
+			a.put(z);
+			z++;
+		}
+	}
+}
+
+class Consumer extends Thread
+{
+	Queue b;
+	
+	Consumer(Queue q)
+	{
+		b=q;
+	}
+	
+	public void run()
+	{
+		while(true) {
+			b.get();
+			
+		}
+		
+	}
+}
+
+public class ProducerConsumer {
+
+	public static void main(String[] args) {
+		Queue q = new Queue();
+		Producer p = new Producer(q);
+		Consumer c = new Consumer(q);
+
+		p.start();
+		c.start();
+	}
+
+}
