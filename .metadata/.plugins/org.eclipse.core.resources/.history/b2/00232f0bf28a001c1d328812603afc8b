@@ -1,9 +1,0 @@
-package MYSQL;
-
-public class MYSQL {
-	CREATE DATABASE movies1;
-	USE movies1;
-	CREATE TABLE movies1(title VARCHAR(50) NOT NULL,genre VARCHAR(30) NOT NULL,director VARCHAR(60) NOT NULL,release_year INT NOT NULL,PRIMARY KEY(title));
-	INSERT INTO movies1 VALUE ("Joker", "psychological thriller", "Todd Phillips", 2019);
-	
-}

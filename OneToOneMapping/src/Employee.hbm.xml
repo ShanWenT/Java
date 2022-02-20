@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.ncs.onetoone.Employee1" table="Employee">
+		<id name="eid" type="int" column="eid">
+		<generator class ="increment"></generator>	
+		</id>
+		<property name="ename">
+			<column name="ename" />
+		</property>
+		<property name="email">
+			<column name="email" />
+		</property>
+		<property name="phno">
+			<column name="phno" />
+		</property>
+		
+		<one-to-one name="addr" cascade="all"></one-to-one>
+	</class>
+</hibernate-mapping>
