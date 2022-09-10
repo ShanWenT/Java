@@ -3,6 +3,7 @@ import java.util.List;
 
 public class CodeTest {
 	public static void main(String[] args) {
+		long startTime = System.nanoTime();
 		String[] inputs = new String[] { "below", "car", "chin", "elbow", "late", "state", "study", "taste", "teal",
 				"tale" };
 		List<Integer> outputs = new ArrayList<>();
@@ -16,6 +17,8 @@ public class CodeTest {
 			outputs.add(mainCount);
 			System.out.println(inputs[i] + " " + outputs.get(i));
 		}
+		long endTime = System.nanoTime();
+		System.out.println("Took " + (endTime - startTime) + " ns");
 	}
 
 	static int checkAnagram(String word, String word2) {
