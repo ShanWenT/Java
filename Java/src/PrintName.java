@@ -38,6 +38,7 @@ public class PrintName {
 							} // A column 
 							System.out.println();
 						} // A row
+					
 						break;
 						
 					case 'B':	
@@ -513,13 +514,16 @@ public class PrintName {
 							} // Z column 
 							System.out.println();
 						} // Z row
+						
 						break;
 						
 					
 				} // switch
 					
+				System.out.println();
 							
 		} // name length
+		
 		
 	}// main method
 

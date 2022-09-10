@@ -13,13 +13,34 @@ public class Alphabets {
 		{
 			for(int i=1; i<=n; i++)
 			{
-				/*
-				if(i==1 && j>n/2||i==n && j>n/2||j==n/2||i+j==n/2+1||i-j==n/2)
+				
+//				if(j==1&& i!=1 || j==n/2&& i!=n&& i!=1 ||j==n && i!=n ||i==1&&j<=n/2 && j!=n/2 && j!=1 || i==n&&j>n/2 && j!=n)
+//				{
+//					System.out.print("*");
+//				} 
+//				// if to print S
+				
+				
+//				if(i==1||i==n||j==n/2) 
+//				{
+//					System.out.print("*");
+//				}
+				// if to print H
+				
+//				if(i==1 && j>n/2||i==n && j>n/2||j==n/2||i+j==n/2+1||i-j==n/2)
+//				{
+//					System.out.print("*");
+//				}  
+				
+				// if to print A
+				
+				
+				
+				if(i==1||i==n||i==j)
 				{
 					System.out.print("*");
-				}  
-				*/
-				// if to print A
+				} 
+				// if to print N
 				
 				/*
 				if(j==1&&i!=n||j==n&&i!=n||i==1||j==n/2&&i!=n||i==n&&j!=1&&j!=n&&j!=n/2)
@@ -63,12 +84,7 @@ public class Alphabets {
 				}*/
 				// if to print G
 				
-				/*
-				if(i==1||i==n||j==n/2) 
-				{
-					System.out.print("*");
-				}*/
-				// if to print H
+				
 				
 				/*
 				if(j==1||j==n||i==n/2) 
@@ -106,12 +122,7 @@ public class Alphabets {
 				} */
 				// if to print M
 				
-				/*
-				if(i==1||i==n||i==j)
-				{
-					System.out.print("*");
-				} */
-				// if to print N
+			
 				
 				
 				/*
@@ -145,12 +156,8 @@ public class Alphabets {
 				// if to print R
 				
 				
-				/*
-				if(j==1&& i!=1 || j==n/2&& i!=n&& i!=1 ||j==n && i!=n ||i==1&&j<=n/2 && j!=n/2 && j!=1 || i==n&&j>n/2 && j!=n)
-				{
-					System.out.print("*");
-				} */
-				// if to print S
+				
+				
 				
 				/*
 				if(j==1||i==n/2)
@@ -194,27 +201,27 @@ public class Alphabets {
 				*/
 				// if to print X
 				
-				/*
-				if(i==j && j<=n/2 ||i+j==n && j<=n/2 || i==5 && j>n/2)
-				{
-					System.out.print("*");
-				}
-				*/
+				
+//				if(i==j && j<=n/2 ||i+j==n && j<=n/2 || i==5 && j>n/2)
+//				{
+//					System.out.print("*");
+//				}
+				
 				//if to print Y
 				
-				/*
-				if(j==1 || j==n||i+j==n+1&&j!=1&&j!=n)
-				{
-					System.out.print("*");
-				}*/
 				
+//				if(j==1 || j==n||i+j==n+1&&j!=1&&j!=n)
+//				{
+//					System.out.print("*");
+//				}
+//				
 				// if to print Z
 				
-				/*
+				
 				else 
 				{
 					System.out.print(" ");
-				} */
+				} 
 				
 			}
 		

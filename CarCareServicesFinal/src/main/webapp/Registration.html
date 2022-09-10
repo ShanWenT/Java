@@ -3,31 +3,64 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Registering your account!</title>
+
+<style>
+
+body
+{
+    margin: 0; /* for top-bottom*/
+	background: linear-gradient(#000386, #0a3fb1, #836bdb);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 100;
+}
+h1
+    {
+	  color : cyan;
+	  text-decoration : underline;
+	  text-align : center;
+	  text-shadow: 20px white 20px white 20px white;
+	}
+tr,td {
+	padding: 15px;
+	background-color: cornflowerblue;
+	color: white;
+}
+
+.container 
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /*This moves an element from its current position according to the parameters given for the X-axis and the Y-axis). */
+}
+</style>
 </head>
 <body>
+<h1>Customers'Registration Form</h1>
  <form action ="Registration">
+ <div class ="container">
     <table>
     <tr>
-    <td>UserName</td>
-    <td><input type="text" name ="username"></td>
+    <td>Username (Max 50 characters)</td>
+    <td><input type="text" name ="username" required></td>
     </tr>
     
     
     <tr>
-    <td>name</td>
-    <td><input type="text" name ="name"></td>
+    <td>Name(Max 50 characters)</td>
+    <td><input type="text" name ="name" required></td>
     </tr>
     
     
     <tr>
-    <td>Password</td>
-    <td><input type="text" name ="password"></td>
+    <td>Password(Max 50 characters)</td>
+    <td><input type="text" name ="password" required></td>
     </tr>
     
     
     <tr>
-    <td>Phone Number</td>
-    <td><input type="text" name ="phoneno"></td>
+    <td>Phone Number (10 digits maximum)</td>
+    <td><input type="text" name ="phoneno" required></td>
     </tr>
     
   
@@ -37,7 +70,7 @@
     </tr>
     
     </table>
-    
+    </div>
     </form>
 </body>
 </html>
