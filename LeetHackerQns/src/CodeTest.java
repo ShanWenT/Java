@@ -5,7 +5,7 @@ public class CodeTest {
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		String[] inputs = new String[] { "below", "car", "chin", "elbow", "late", "state", "study", "taste", "teal",
-				"tale" };
+				"tale", "arc"};
 		List<Integer> outputs = new ArrayList<>();
 		for (int i = 0; i < inputs.length; i++) {
 			int mainCount = 0;
