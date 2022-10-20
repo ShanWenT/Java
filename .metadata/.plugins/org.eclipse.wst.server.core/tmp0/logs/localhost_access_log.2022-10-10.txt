@@ -1,0 +1,7 @@
+127.0.0.1 - - [10/Oct/2022:13:07:46 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [10/Oct/2022:13:07:48 +0800] "GET /shan/WEB-INF/classes/com/shan/shan/IndexController.java HTTP/1.1" 404 949
+0:0:0:0:0:0:0:1 - - [10/Oct/2022:13:07:48 +0800] "GET /favicon.ico HTTP/1.1" 404 973
+127.0.0.1 - - [10/Oct/2022:16:31:42 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [10/Oct/2022:16:32:28 +0800] "GET /shan/WEB-INF/classes/com/shan/shan/IndexController.java HTTP/1.1" 404 949
+0:0:0:0:0:0:0:1 - - [10/Oct/2022:16:32:28 +0800] "GET /favicon.ico HTTP/1.1" 404 973
+127.0.0.1 - - [10/Oct/2022:16:55:15 +0800] "GET / HTTP/1.1" 404 951

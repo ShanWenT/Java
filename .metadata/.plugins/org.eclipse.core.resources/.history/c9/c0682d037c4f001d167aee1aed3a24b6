@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class pangram2 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter input text :");
+		String plainText = sc.nextLine().replaceAll("\\s", "").toUpperCase();
+
+		System.out.println(isPangram(plainText)); 
+		
+		sc.close();
+	}
+	
+	static boolean isPangram(String stringText) {
+		int counter=0;
+		for(int i=0; i<stringText.length(); i++) {
+			int c = stringText.charAt(i)-'a';
+			if(c>=0 || c<26) {
+				counter++;
+			}
+			if(counter ==26)
+				break;
+		}
+		return counter==26;
+	}
+
+}
